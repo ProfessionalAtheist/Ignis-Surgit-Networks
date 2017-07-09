@@ -1,3 +1,161 @@
-* {
+/* Setup for JQuery accordion */
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300,400,600');
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    font-size:1.1em;
+    margin: 1em 0;
+}
+
+.description {
+  margin: 1em auto 2.25em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+  }
+    .inner {
+    	margin:0 auto;
+        padding-left: 1em;
+        overflow: hidden;
+        display: none;
+        background-color:rgba(79, 91, 102, 0.4);
+        width:75%;
+      }
+        &.show {
+          /*display: block;*/
+        }
+    }
+  
+    li {
+        margin: .5em 0;
+      }
+        a.toggle {
+        	margin:0 auto;
+            width: 75%;
+            display: block;
+            background: rgba(0,0,0,0.78);
+            color: #fefefe;
+            padding: .75em;
+            border-radius: 0.15em;
+            transition: background .3s ease;
+}
+            &:hover {
+                background: rgba(255, 255, 255, 0.9);
+            }
+        }
+    }
+}
+
+/* Setting base values for text etc. background img is placeholder */
+* {
+	box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+}
+html {
+	font-size:16px;
+	font-family:"Times New Roman";
+}
+
+body {
+	background: url(http://i.imgur.com/8ybFKMJ.jpg);
+	background-size: cover;
+	background-position:center;
+	color:black;
+
+	margin:0px;
+}
+
+/* Styling for dividers, horizontal/vertical rules, and text */
+
+#head_divider {
+	width:1000px;
+	border-top:1px solid white;
+	border-bottom:1px solid rgba(255,255,255,0.2);
+	margin-bottom:50px;
+}
+
+.sect_divider {
+	width:1000px;
+	margin-bottom:50px;
+	color:rgba(255,255,255,0.01);
+	visibility:hidden;
+}
+
+#header_text {
+	color:white;
+	float:center;
+	font-size:3.5em;
+	text-shadow: 0 0 4px #283458;
+	margin-left: 50px;
+  	margin-top: 100px;
+
+}
+
+.toggle_text {
+	margin:0 auto;
+	font-size:1.25em;
+	font-weight:500;
+	text-shadow: 0 0 4px #283458;
+	text-align:center;
+	font-family:Arial;
+
+}
+
+#about_head {
+	color:white;
+	font-size:2em;
+	font-weight:500;
+	text-shadow: 0 0 4px #283458;
+	text-align:center;
+	font-family:Arial;
+
+}
+
+.tab_text {
+	color:white;
+	font-size:1.25em;
+	font-weight:300;
+	text-align:center;
+	font-family:Arial;
+}
+
+
+/* CSS for page elements (boxes, tabs, containers) */
+
+
+#logo {
+	float:left;
+	display: inline;
+	width:400px;
+	height:400px;
+}
+
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.server_banner {
+	margin-top:25px;
+	width:35%;
+	height:35%;
+	border-radius:25px;
+	position:relative;
+}
+
+.staff_ico {
+	width:200px;
+	height:200px;
+	border-radius:50px;
+	margin:0 auto;
 }
